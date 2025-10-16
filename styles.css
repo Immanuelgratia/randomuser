@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    background: url(bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.user_profile {
+    margin-top: 6%;
+    width: 100%;
+    max-width: 400px;
+    height: 500px;
+    background-color: rgb(230, 228, 228);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 30px 90px rgba(0, 0, 0, 0.4);
+    align-items: center;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.profile-top {
+    background: linear-gradient(to right, #9573b7, #563bec);
+    padding: 1rem;
+    text-align: center;
+    color: white;
+}
+
+.profile-top img {
+    border-radius: 50%;
+    border: 3px solid white;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.profile-top .profile-info {
+    margin-top: 1rem;
+}
+
+.profile-btm {
+    padding: 3rem 3rem 1rem 3rem;
+}
+
+.profile-btm .profile-info {
+    margin-bottom: 2rem;
+    padding: 10px;
+    background-color: #ffff;
+    border-radius: 10px;
+    align-items: center;
+    display: flex;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+.profile-btm .profile-info .material-symbols-outlined {
+    width: 20px;
+    margin-right: 1rem;
+    color: grey;
+}
+
+.profile-btm .profile-info:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #563bec;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    -moz-transition: 0.5s ease;
+    -ms-transition: 0.5s ease;
+    -o-transition: 0.5s ease;
+}
+
+button:hover {
+    background: #9573b7;
+    color: white;
+}

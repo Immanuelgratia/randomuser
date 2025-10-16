@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Randomuser</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <div class="user_profile">
+      <div class="profile-top">
+        <img id="image" src="" alt="photo" />
+        <div class="profile-info">
+          <span id="name">Name</span>
+          <span>|</span>
+          <span id="gender">Gender</span>
+        </div>
+      </div>
+
+      <div class="profile-btm">
+        <div class="profile-info">
+          <span class="material-symbols-outlined"> alternate_email </span>
+          <span id="email">Email</span>
+        </div>
+
+        <div class="profile-info">
+          <span class="material-symbols-outlined">call</span>
+          <span id="phone">Phone</span>
+        </div>
+
+        <div class="profile-info">
+          <span class="material-symbols-outlined">flag_2</span>
+          <span id="location">Country</span>
+        </div>
+      </div>
+    </div>
+    <button onclick="getRandomUser()">New User</button>
+    <script src="script.js"></script>
+  </body>
+</html>
